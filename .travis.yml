@@ -1,15 +1,21 @@
 language: php
 
+cache:
+  directories:
+    - $HOME/.composer/cache
+
 php:
     - 7.2
 
-before_script:
+install:
     - travis_retry composer self-update
     - travis_retry composer update
+    - travis_retry composer require php-coveralls/php-coveralls
 
 script:
-    - vendor/bin/phpunit --coverage-clover=build/logs/clover.xml
-    - vendor/bin/phpcs --standard=PSR2 src tests
+    - composer test-coverage
+    - composer cs-check
+    - composer analyze
 
 after_script:
-    - php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
+    - vendor/bin/php-coveralls -v
