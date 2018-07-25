@@ -1,0 +1,27 @@
+<?php
+
+declare(strict_types=1);
+
+namespace FrankVerhoeven\Tactician\Event;
+
+use Zend\EventManager\Event;
+
+/**
+ * CommandFailedEvent
+ *
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
+final class CommandFailedEvent extends Event implements CommandEventInterface
+{
+    use CommandEventTrait;
+
+    /**
+     * @param object $command
+     */
+    public function __construct(object $command)
+    {
+        $this->command = $command;
+
+        parent::__construct('command.failed');
+    }
+}
