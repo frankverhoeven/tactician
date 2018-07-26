@@ -13,6 +13,7 @@ use FrankVerhoeven\Tactician\Handler\Locator\ContainerLocatorFactory;
 use FrankVerhoeven\Tactician\Handler\Middleware\CommandHandlerMiddlewareFactory;
 use FrankVerhoeven\Tactician\Handler\Middleware\EventManagerMiddleware;
 use FrankVerhoeven\Tactician\Handler\Middleware\EventManagerMiddlewareFactory;
+use League\Tactician\CommandBus;
 use League\Tactician\Handler\CommandHandlerMiddleware;
 use League\Tactician\Handler\CommandNameExtractor\ClassNameExtractor;
 use League\Tactician\Handler\CommandNameExtractor\CommandNameExtractor;
@@ -40,6 +41,7 @@ final class ConfigProvider
                     MethodNameInflector::class => InvokeInflector::class,
                 ],
                 'factories' => [
+                    CommandBus::class => CommandBusFactory::class,
                     CommandHandlerMapperInterface::class => CombinedConfigAndReplacingMapperFactory::class,
                     CommandHandlerMiddleware::class => CommandHandlerMiddlewareFactory::class,
                     ConfigMapper::class => ConfigMapperFactory::class,
