@@ -8,7 +8,6 @@ use FrankVerhoeven\Tactician\Handler\CommandHandlerMapper\CombinedConfigAndRepla
 use FrankVerhoeven\Tactician\Handler\CommandHandlerMapper\CommandHandlerMapperInterface;
 use FrankVerhoeven\Tactician\Handler\CommandHandlerMapper\ConfigMapper;
 use FrankVerhoeven\Tactician\Handler\CommandHandlerMapper\ConfigMapperFactory;
-use FrankVerhoeven\Tactician\Handler\CommandHandlerMapper\ReplaceCommandWithHandlerMapper;
 use FrankVerhoeven\Tactician\Handler\Locator\ContainerLocatorFactory;
 use FrankVerhoeven\Tactician\Handler\Middleware\CommandHandlerMiddlewareFactory;
 use FrankVerhoeven\Tactician\Handler\Middleware\EventManagerMiddleware;
@@ -36,7 +35,6 @@ final class ConfigProvider
         return [
             'dependencies' => [
                 'invokables' => [
-                    CommandHandlerMapperInterface::class => ReplaceCommandWithHandlerMapper::class,
                     CommandNameExtractor::class => ClassNameExtractor::class,
                     MethodNameInflector::class => InvokeInflector::class,
                 ],
