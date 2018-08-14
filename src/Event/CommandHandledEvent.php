@@ -7,8 +7,6 @@ namespace FrankVerhoeven\Tactician\Event;
 use Zend\EventManager\Event;
 
 /**
- * CommandHandledEvent
- *
  * @author Frank Verhoeven <hi@frankverhoeven.me>
  */
 final class CommandHandledEvent extends Event implements CommandEventInterface
@@ -22,6 +20,6 @@ final class CommandHandledEvent extends Event implements CommandEventInterface
     {
         $this->command = $command;
 
-        parent::__construct('command.handled');
+        parent::__construct(\get_class($command) . '.handled');
     }
 }

@@ -9,6 +9,9 @@ use FrankVerhoeven\Tactician\Handler\Locator\ContainerLocator;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 final class ContainerLocatorTest extends TestCase
 {
     /**

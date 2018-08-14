@@ -8,8 +8,6 @@ use FrankVerhoeven\Tactician\Handler\CommandHandlerMapper\CommandHandlerMapperIn
 use Psr\Container\ContainerInterface;
 
 /**
- * ContainerLocatorFactory
- *
  * @author Frank Verhoeven <hi@frankverhoeven.me>
  */
 final class ContainerLocatorFactory

@@ -8,6 +8,9 @@ use FrankVerhoeven\Tactician\Handler\CommandHandlerMapper\CommandHandlerMapperIn
 use League\Tactician\Handler\Locator\HandlerLocator;
 use Psr\Container\ContainerInterface;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 final class ContainerLocator implements HandlerLocator
 {
     /**

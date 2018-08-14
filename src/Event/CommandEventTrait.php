@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace FrankVerhoeven\Tactician\Event;
 
 /**
- * CommandEventTrait
- *
  * @author Frank Verhoeven <hi@frankverhoeven.me>
  */
 trait CommandEventTrait

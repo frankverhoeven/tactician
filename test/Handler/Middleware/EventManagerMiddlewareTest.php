@@ -11,6 +11,9 @@ use FrankVerhoeven\Tactician\Handler\Middleware\EventManagerMiddleware;
 use PHPUnit\Framework\TestCase;
 use Zend\EventManager\EventManagerInterface;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 final class EventManagerMiddlewareTest extends TestCase
 {
     /**

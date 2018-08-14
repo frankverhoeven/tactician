@@ -8,8 +8,6 @@ use Psr\Container\ContainerInterface;
 use Zend\EventManager\EventManagerInterface;
 
 /**
- * EventManagerMiddlewareFactory
- *
  * @author Frank Verhoeven <hi@frankverhoeven.me>
  */
 final class EventManagerMiddlewareFactory

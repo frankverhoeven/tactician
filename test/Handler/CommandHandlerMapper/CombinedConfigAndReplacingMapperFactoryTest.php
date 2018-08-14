@@ -11,6 +11,9 @@ use FrankVerhoeven\Tactician\Handler\CommandHandlerMapper\ConfigMapper;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 final class CombinedConfigAndReplacingMapperFactoryTest extends TestCase
 {
     public function testCreatesCombinedMapper(): void

@@ -7,8 +7,6 @@ namespace FrankVerhoeven\Tactician\Handler\CommandHandlerMapper;
 use Psr\Container\ContainerInterface;
 
 /**
- * CombinedConfigAndReplacingMapperFactory
- *
  * @author Frank Verhoeven <hi@frankverhoeven.me>
  */
 final class CombinedConfigAndReplacingMapperFactory

@@ -7,6 +7,9 @@ namespace FrankVerhoeven\TacticianTest\Handler\CommandHandlerMapper;
 use FrankVerhoeven\Tactician\Handler\CommandHandlerMapper\ReplaceCommandWithHandlerMapper;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 final class ReplaceCommandWithHandlerMapperTest extends TestCase
 {
     /**

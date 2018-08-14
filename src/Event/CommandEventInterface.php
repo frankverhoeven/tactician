@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace FrankVerhoeven\Tactician\Event;
 
+use Zend\EventManager\EventInterface;
+
 /**
- * CommandEventInterface
- *
  * @author Frank Verhoeven <hi@frankverhoeven.me>
  */
-interface CommandEventInterface
+interface CommandEventInterface extends EventInterface
 {
     /**
      * @return object

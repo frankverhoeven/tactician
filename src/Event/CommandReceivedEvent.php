@@ -7,8 +7,6 @@ namespace FrankVerhoeven\Tactician\Event;
 use Zend\EventManager\Event;
 
 /**
- * CommandReceivedEvent
- *
  * @author Frank Verhoeven <hi@frankverhoeven.me>
  */
 final class CommandReceivedEvent extends Event implements CommandEventInterface
@@ -22,6 +20,6 @@ final class CommandReceivedEvent extends Event implements CommandEventInterface
     {
         $this->command = $command;
 
-        parent::__construct('command.received');
+        parent::__construct(\get_class($command) . '.received');
     }
 }

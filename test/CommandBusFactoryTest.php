@@ -12,6 +12,9 @@ use League\Tactician\Middleware;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 final class CommandBusFactoryTest extends TestCase
 {
     public function testCreatesConfigMapper(): void

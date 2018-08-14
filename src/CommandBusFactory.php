@@ -10,8 +10,6 @@ use League\Tactician\Handler\CommandHandlerMiddleware;
 use Psr\Container\ContainerInterface;
 
 /**
- * CommandBusFactory
- *
  * @author Frank Verhoeven <hi@frankverhoeven.me>
  */
 final class CommandBusFactory

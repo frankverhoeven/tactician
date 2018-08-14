@@ -8,6 +8,9 @@ use FrankVerhoeven\Tactician\Handler\CommandHandlerMapper\ConfigMapper;
 use League\Tactician\Exception\MissingHandlerException;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 final class ConfigMapperTest extends TestCase
 {
     public function testGetHandlerNameForCommandName(): void

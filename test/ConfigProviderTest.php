@@ -7,6 +7,9 @@ namespace FrankVerhoeven\TacticianTest;
 use FrankVerhoeven\Tactician\ConfigProvider;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 final class ConfigProviderTest extends TestCase
 {
     public function testProvidesConfig(): void

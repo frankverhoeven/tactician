@@ -7,6 +7,9 @@ namespace FrankVerhoeven\TacticianTest\Event;
 use FrankVerhoeven\Tactician\Event\CommandFailedEvent;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 final class CommandFailedEventTest extends TestCase
 {
     public function testConstructor(): void
@@ -14,6 +17,6 @@ final class CommandFailedEventTest extends TestCase
         $event = new CommandFailedEvent($command = new \stdClass());
 
         self::assertSame($command, $event->command());
-        self::assertEquals('command.failed', $event->getName());
+        self::assertEquals(\stdClass::class . '.failed', $event->getName());
     }
 }

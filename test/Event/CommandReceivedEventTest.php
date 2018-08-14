@@ -7,6 +7,9 @@ namespace FrankVerhoeven\TacticianTest\Event;
 use FrankVerhoeven\Tactician\Event\CommandReceivedEvent;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 final class CommandReceivedEventTest extends TestCase
 {
     public function testConstructor(): void
@@ -14,6 +17,6 @@ final class CommandReceivedEventTest extends TestCase
         $event = new CommandReceivedEvent($command = new \stdClass());
 
         self::assertSame($command, $event->command());
-        self::assertEquals('command.received', $event->getName());
+        self::assertEquals(\stdClass::class . '.received', $event->getName());
     }
 }

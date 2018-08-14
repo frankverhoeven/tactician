@@ -7,8 +7,6 @@ namespace FrankVerhoeven\Tactician\Handler\CommandHandlerMapper;
 use League\Tactician\Exception\MissingHandlerException;
 
 /**
- * CombinedMapper
- *
  * @author Frank Verhoeven <hi@frankverhoeven.me>
  */
 final class CombinedMapper implements CommandHandlerMapperInterface

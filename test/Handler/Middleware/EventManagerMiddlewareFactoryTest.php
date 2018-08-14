@@ -10,6 +10,9 @@ use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
 use Zend\EventManager\EventManagerInterface;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 final class EventManagerMiddlewareFactoryTest extends TestCase
 {
     public function testCreatesEventManagerMiddleware(): void

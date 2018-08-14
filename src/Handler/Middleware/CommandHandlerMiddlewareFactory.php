@@ -11,8 +11,6 @@ use League\Tactician\Handler\MethodNameInflector\MethodNameInflector;
 use Psr\Container\ContainerInterface;
 
 /**
- * CommandHandlerMiddlewareFactory
- *
  * @author Frank Verhoeven <hi@frankverhoeven.me>
  */
 final class CommandHandlerMiddlewareFactory

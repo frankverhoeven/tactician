@@ -9,6 +9,9 @@ use FrankVerhoeven\Tactician\Handler\CommandHandlerMapper\CommandHandlerMapperIn
 use League\Tactician\Exception\MissingHandlerException;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 final class CombinedMapperTest extends TestCase
 {
     /**

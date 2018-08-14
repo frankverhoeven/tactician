@@ -12,6 +12,9 @@ use League\Tactician\Handler\MethodNameInflector\MethodNameInflector;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 final class CommandHandlerMiddlewareFactoryTest extends TestCase
 {
     public function testCreatesCommandHandlerMiddleware(): void

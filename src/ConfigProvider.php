@@ -21,8 +21,6 @@ use League\Tactician\Handler\MethodNameInflector\InvokeInflector;
 use League\Tactician\Handler\MethodNameInflector\MethodNameInflector;
 
 /**
- * ConfigProvider
- *
  * @author Frank Verhoeven <hi@frankverhoeven.me>
  */
 final class ConfigProvider

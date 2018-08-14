@@ -9,6 +9,9 @@ use FrankVerhoeven\Tactician\Handler\CommandHandlerMapper\ConfigMapperFactory;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 final class ConfigMapperFactoryTest extends TestCase
 {
     public function testCreatesConfigMapper(): void

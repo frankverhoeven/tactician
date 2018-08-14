@@ -7,8 +7,6 @@ namespace FrankVerhoeven\Tactician\Event;
 use Zend\EventManager\Event;
 
 /**
- * CommandFailedEvent
- *
  * @author Frank Verhoeven <hi@frankverhoeven.me>
  */
 final class CommandFailedEvent extends Event implements CommandEventInterface
@@ -22,6 +20,6 @@ final class CommandFailedEvent extends Event implements CommandEventInterface
     {
         $this->command = $command;
 
-        parent::__construct('command.failed');
+        parent::__construct(\get_class($command) . '.failed');
     }
 }

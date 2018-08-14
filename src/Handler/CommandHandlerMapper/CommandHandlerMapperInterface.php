@@ -1,10 +1,14 @@
 <?php
+
 declare(strict_types=1);
 
 namespace FrankVerhoeven\Tactician\Handler\CommandHandlerMapper;
 
 use League\Tactician\Exception\MissingHandlerException;
 
+/**
+ * @author Frank Verhoeven <hi@frankverhoeven.me>
+ */
 interface CommandHandlerMapperInterface
 {
     /**

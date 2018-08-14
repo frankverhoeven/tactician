@@ -11,8 +11,6 @@ use League\Tactician\Middleware;
 use Zend\EventManager\EventManagerInterface;
 
 /**
- * EventManagerMiddleware
- *
  * @author Frank Verhoeven <hi@frankverhoeven.me>
  */
 final class EventManagerMiddleware implements Middleware
