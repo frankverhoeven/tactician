@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace FrankVerhoeven\TacticianTest\Event;
 
+use FrankVerhoeven\Tactician\Event\CommandEventInterface;
 use FrankVerhoeven\Tactician\Event\CommandHandledEvent;
 use PHPUnit\Framework\TestCase;
 
@@ -17,6 +18,6 @@ final class CommandHandledEventTest extends TestCase
         $event = new CommandHandledEvent($command = new \stdClass());
 
         self::assertSame($command, $event->command());
-        self::assertEquals(\stdClass::class . '.handled', $event->getName());
+        self::assertEquals(\stdClass::class . CommandEventInterface::HANDLED, $event->getName());
     }
 }

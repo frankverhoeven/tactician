@@ -20,6 +20,6 @@ final class CommandFailedEvent extends Event implements CommandEventInterface
     {
         $this->command = $command;
 
-        parent::__construct(\get_class($command) . '.failed');
+        parent::__construct(\get_class($command) . CommandEventInterface::FAILED);
     }
 }

@@ -11,6 +11,10 @@ use Zend\EventManager\EventInterface;
  */
 interface CommandEventInterface extends EventInterface
 {
+    public const RECEIVED = '.received';
+    public const HANDLED = '.handled';
+    public const FAILED = '.failed';
+
     /**
      * @return object
      */

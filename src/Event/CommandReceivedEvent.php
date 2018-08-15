@@ -20,6 +20,6 @@ final class CommandReceivedEvent extends Event implements CommandEventInterface
     {
         $this->command = $command;
 
-        parent::__construct(\get_class($command) . '.received');
+        parent::__construct(\get_class($command) . CommandEventInterface::RECEIVED);
     }
 }

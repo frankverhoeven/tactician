@@ -20,6 +20,6 @@ final class CommandHandledEvent extends Event implements CommandEventInterface
     {
         $this->command = $command;
 
-        parent::__construct(\get_class($command) . '.handled');
+        parent::__construct(\get_class($command) . CommandEventInterface::HANDLED);
     }
 }
